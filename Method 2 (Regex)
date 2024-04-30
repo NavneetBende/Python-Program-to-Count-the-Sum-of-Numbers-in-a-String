@@ -1,0 +1,16 @@
+# Function to calculate sum of all
+# numbers present in a string
+# containing alphanumeric characters
+
+import re
+def find_sum(str1):
+    # Regular Expression that matches
+    # digits in between a string
+    return sum(map(int, re.findall('\d+', str1)))
+
+# Driver code
+# input alphanumeric string
+str1 = "12Prep20insta68"
+
+# Function call
+print("Sum of all the digits",find_sum(str1))
